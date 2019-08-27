@@ -1,37 +1,335 @@
-.verticalFlex{
-  display: flex;
-  flex-direction: column;
+:root {
+  --init: translate(-50%, -50%);
+  --a1-transform: translate(-50%, calc(-50% - 50px));
+  --n1-transform: translate(calc(-50% + 100px), calc(-50% - 50px));
+  --y-transform: translate(calc(-50% - 100px), calc(-50% - 50px));
+  --r-transform: translate(calc(-50% - 200px), calc(-50% - 50px));
+  --a2-transform: translate(-50%, calc(-50% + 50px));
+  --n2-transform: translate(calc(-50% + 100px), calc(-50% + 50px));
+  --d-transform: translate(calc(-50% - 100px), calc(-50% + 50px));
+  --g-transform: translate(calc(-50% + 200px), calc(-50% + 50px));
+  --ani-delay: 250ms;
+}
+
+#namescreen {
+  position: relative;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
+}
+
+.projectdiv{
+  height: 100%;
+  width: 100%;
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-size: 112px;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+span{
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-/* h1 {
-  padding-left:15px;
-  padding-right:15px; 
-  margin: 0;
-  flex-shrink: 1;
+span#a1{
+  z-index: 1;
+  animation: moveA1 2s ease infinite;
+  animation-delay: var(--ani-delay);
 }
 
-h1 {
-  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: bolder;
-  font-kerning: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-kerning: normal;
-  -webkit-text-size-adjust: 100%;
-} */
+span#n1{
+  z-index: 0;
+  animation: moveN1 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+
+span#y {
+  z-index: 0;
+  animation: moveY 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+span#r {
+  z-index: 0;
+  animation: moveR 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+
+span#a2 {
+  z-index: 1;
+  animation: moveA2 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+
+span#n2 {
+  z-index: 0;
+  animation: moveN2 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+
+span#d {
+  z-index: 0;
+  animation: moveD 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+
+span#g {
+  z-index: 0;
+  animation: moveG 2s ease infinite;
+  animation-delay: var(--ani-delay);
+}
+
+#n1,#n2,#r,#d,#g,#y{
+  visibility: hidden;
+}
+
+@keyframes moveA1 {
+  0% {
+    transform: var(--init);
+    opacity: 0;
+  }
+  27% {
+    transform: var(--a1-transform);
+    opacity: 1;
+  }
+  81% {
+    transform: var(--a1-transform);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: var(--a1-transform);
+  }
+}
+@keyframes moveA2 {
+  0% {
+    transform: var(--init);
+    opacity: 0;
+  }
+  27% {
+    transform: var(--a2-transform);
+    opacity: 1;
+  }
+  81% {
+    transform: var(--a2-transform);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: var(--a2-transform);
+  }
+}
+@keyframes moveN2 {
+  0% {
+    transform: var(--init);
+  }
+  26% {
+    visibility: hidden;
+  }
+  27% {
+    transform: var(--a2-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  54% {
+    transform: var(--n2-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  81% {
+    transform: var(--n2-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: var(--n2-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+@keyframes moveN1 {
+  0% {
+    transform: var(--init);
+  }
+  26% {
+    visibility: hidden;
+  }
+  27% {
+    transform: var(--a1-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  54% {
+    transform: var(--n1-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  81% {
+    transform: var(--n1-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: var(--n1-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+@keyframes moveY {
+  0% {
+    transform: var(--init);
+  }
+  26% {
+    visibility: hidden;
+  }
+  27% {
+    transform: var(--a1-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  54% {
+    transform: var(--y-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  81% {
+    transform: var(--y-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: var(--y-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+@keyframes moveD {
+  0% {
+    transform: var(--init);
+  }
+  26% {
+    visibility: hidden;
+  }
+  27% {
+    transform: var(--a2-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  54% {
+    transform: var(--d-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  81% {
+    transform: var(--d-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: var(--d-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+@keyframes moveG {
+  0% {
+    transform: var(--init);
+  }
+  27% {
+    transform: var(--a2-transform);
+  }
+  53% {
+    visibility: hidden;
+  }
+  54% {
+    transform: var(--n2-transform);
+    opacity: 0;
+    visibility: visible;
+  }
+  68% {
+    opacity: 1;
+  }
+  81% {
+    transform: var(--g-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: var(--g-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+@keyframes moveR {
+  0% {
+    transform: var(--init);
+  }
+  27% {
+    transform: var(--a1-transform);
+  }
+  53% {
+    visibility: hidden;
+  }
+  54% {
+    transform: var(--y-transform);
+    opacity: 0;
+    visibility: visible;
+  }
+  68% {
+    opacity: 1;
+  }
+  81% {
+    transform: var(--r-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  81% {
+    transform: var(--r-transform);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: var(--r-transform);
+    visibility: visible;
+    opacity: 0;
+  }
+}
 
 .name {
-  height: 100%;
   display: flex;
   flex-direction: row;
-  top: 50%;
-  transform: translate(0, -50%);
-  position: relative;
-  justify-content: space-evenly;
 }

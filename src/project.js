@@ -8,13 +8,16 @@ const Project = posed.div({
         height: 100,
         transition: {duration: 300},
         flip: true,
-        applyAtStart: {
+        applyAtStart:{
+            margin: "50px",
+        },
+        applyAtEnd: {
             display: "block",
-        }
+        },
     },
     fullscreen: {
-        width: '100%',
-        height: '100%',
+        width: '50vw',
+        height: '50vh',
         transition: {duration: 500},
         flip: true,
         applyAtEnd: {
@@ -22,23 +25,25 @@ const Project = posed.div({
         }
     },
     zoomed: {
-        width: 300, 
-        height: 300,
+        width: 200, 
+        height: 200,
         transition: { duration: 400},
         flip: true,
         applyAtStart: {
             display: "block",
+            margin: "0px",
         }
     },
     hidden: {
-        applyAtEnd: {
+        applyAtStart: {
             display: "none",
-        }
+        },
     }
 })
 
 const StyledProject = styled(Project)`
     background: red;
+    transform-origin: 50% 50%;
 `
 
 export class Projects extends React.Component{
@@ -55,20 +60,18 @@ export class Projects extends React.Component{
 
     render(){
         return (
-            // <div>
+            <div className="projectdiv">
                 <div className="name">
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                 </div>
-            
-            /* <div className="name">
-                <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
-                <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
-                <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
-            </div> */
-            /* </div> */
-            
+                <div className="name">
+                    <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
+                    <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
+                    <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
+                </div>
+            </div>
         )
     }
 }
@@ -84,14 +87,15 @@ export class ProjectThumbnail extends React.Component{
 
     handleClick = () => {
         this.setState({isOpen: !this.state.isOpen})
-        console.log(this.props.projectOpened)
         this.props.onClick()
     }
 
     render(){
+        const {isOpen, isHover} = this.state
+        const {projectOpened} = this.props
         return (
             <StyledProject
-                pose={this.state.isOpen ? "fullscreen" : this.props.projectOpened ? "hidden" : this.state.isHover ? "zoomed" : "thumbnail"}
+                pose={isOpen ? "fullscreen" : projectOpened ? "hidden" : isHover ? "zoomed" : "thumbnail"}
                 initialPose={"thumbnail"}
                 onClick={this.handleClick}
                 onMouseEnter={() => this.setState({isHover: true})}
