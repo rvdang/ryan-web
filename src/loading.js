@@ -1,4 +1,5 @@
 import React from 'react';
+import './Loading.css'
 export const LoadingScreen = (props) => (
     <div id="namescreen">
         <span className="intro" id="r">R</span>
@@ -14,12 +15,12 @@ export const LoadingScreen = (props) => (
 )
 
 export const Logo = (props) => (
-    <div>
-        <span>R&nbsp;</span>
-        <span>YD</span>
-        <span>AA</span>
-        <span>NN</span>
-        <span>&nbsp;G</span>
+    <div className="logo" style={{opacity: 0, position: "absolute", top: "10px", left: "10px"}}>
+        <span className="logo">R&nbsp;</span>
+        <span className="logo">YD</span>
+        <span className="logo">AA</span>
+        <span className="logo">NN</span>
+        <span className="logo">&nbsp;G</span>
     </div>
 )
 

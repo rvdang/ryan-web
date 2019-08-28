@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Project = posed.div({
     thumbnail: {
+        position: "static",
         width: 100,
         height: 100,
         transition: {duration: 300},
@@ -16,6 +17,11 @@ const Project = posed.div({
         },
     },
     fullscreen: {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
         width: '100vw',
         height: '100vh',
         transition: {duration: 500},
@@ -25,6 +31,7 @@ const Project = posed.div({
         }
     },
     zoomed: {
+        position: "static",
         width: 200, 
         height: 200,
         transition: { duration: 400},
@@ -35,15 +42,14 @@ const Project = posed.div({
         }
     },
     hidden: {
-        applyAtStart: {
+        applyAtEnd: {
             display: "none",
         },
     }
 })
 
 const StyledProject = styled(Project)`
-    background: red;
-    transform-origin: 50% 50%;
+    background: gray;
 `
 
 export class Projects extends React.Component{
