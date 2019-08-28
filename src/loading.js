@@ -14,13 +14,17 @@ export const LoadingScreen = (props) => (
     </div>
 )
 
-export const Logo = (props) => (
-    <div className="logo" style={{opacity: 0, position: "absolute", top: "10px", left: "10px"}}>
+export const Navbar = (props) => (
+    <div className="logo">
         <span className="logo">R&nbsp;</span>
         <span className="logo">YD</span>
         <span className="logo">AA</span>
         <span className="logo">NN</span>
         <span className="logo">&nbsp;G</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Me</span>
     </div>
 )
 

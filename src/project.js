@@ -18,12 +18,10 @@ const Project = posed.div({
     },
     fullscreen: {
         position: "fixed",
-        top: 0,
-        left: 0,
         right: 0,
         bottom: 0,
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: 'calc(100% - 58px)',
         transition: {duration: 500},
         flip: true,
         applyAtEnd: {
@@ -37,8 +35,10 @@ const Project = posed.div({
         transition: { duration: 400},
         flip: true,
         applyAtStart: {
-            display: "block",
             margin: "0px",
+        },
+        applyAtEnd:{
+            display: "block",
         }
     },
     hidden: {
@@ -49,7 +49,7 @@ const Project = posed.div({
 })
 
 const StyledProject = styled(Project)`
-    background: gray;
+    background: #CBD2D0;
 `
 
 export class Projects extends React.Component{
@@ -103,7 +103,7 @@ export class ProjectThumbnail extends React.Component{
             <StyledProject
                 pose={isOpen ? "fullscreen" : projectOpened ? "hidden" : isHover ? "zoomed" : "thumbnail"}
                 initialPose={"thumbnail"}
-                onClick={this.handleClick}
+                // onClick={this.handleClick}
                 onMouseEnter={() => this.setState({isHover: true})}
                 onMouseLeave={() => this.setState({isHover: false})}
             />

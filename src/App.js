@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Projects } from './project';
-import { LoadingScreen, Logo, Badge } from './loading';
+import { LoadingScreen, Navbar } from './loading';
 
 
 function App() {
   return (
-    <div style={{position:"absolute", top: 0, left: 0, height: "100%", width: "100%"}}>
-      <Logo/>
+    <div style={{display: "flex", flexDirection: "column", position:"absolute", top: 0, left: 0, height: "100%", width: "100%"}}>
+      <Navbar/>
       <LoadingScreen>
         <Projects/>
       </LoadingScreen>

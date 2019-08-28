@@ -20,6 +20,16 @@ span {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    color: white;
+}
+
+div.logo {
+    opacity: 0;
+    display: flex;
+    /* position: absolute; */
+    border: 10px solid #A5A299;
+    background-color: #A5A299;
+    align-items: center;
 }
 
 span.logo {
@@ -29,6 +39,7 @@ span.logo {
 
 
 span.intro{
+    color: black;
     position: absolute;
     font-size: 112px;
     left: 50%;
