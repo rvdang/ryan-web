@@ -25,12 +25,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s ease 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2250ms;
+  pointer-events: none;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
 span {
   font-family: 'Raleway';
   font-weight: 100;
-  font-size: 112px;
+  
   text-orientation: upright;
   writing-mode: vertical-lr;
   -webkit-touch-callout: none;
@@ -40,8 +56,9 @@ span {
   user-select: none;
 }
 
-span{
+span.intro{
   position: absolute;
+  font-size: 112px;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
@@ -51,48 +68,48 @@ span{
 
 span#a1{
   z-index: 1;
-  animation: moveA1 2s ease infinite;
+  animation: moveA1 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 
 span#n1{
   z-index: 0;
-  animation: moveN1 2s ease infinite;
+  animation: moveN1 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 
 span#y {
   z-index: 0;
-  animation: moveY 2s ease infinite;
+  animation: moveY 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 span#r {
   z-index: 0;
-  animation: moveR 2s ease infinite;
+  animation: moveR 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 
 span#a2 {
   z-index: 1;
-  animation: moveA2 2s ease infinite;
+  animation: moveA2 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 
 span#n2 {
   z-index: 0;
-  animation: moveN2 2s ease infinite;
+  animation: moveN2 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 
 span#d {
   z-index: 0;
-  animation: moveD 2s ease infinite;
+  animation: moveD 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 
 span#g {
   z-index: 0;
-  animation: moveG 2s ease infinite;
+  animation: moveG 2s ease 1;
   animation-delay: var(--ani-delay);
 }
 

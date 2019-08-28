@@ -16,8 +16,8 @@ const Project = posed.div({
         },
     },
     fullscreen: {
-        width: '50vw',
-        height: '50vh',
+        width: '100vw',
+        height: '100vh',
         transition: {duration: 500},
         flip: true,
         applyAtEnd: {

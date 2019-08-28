@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
 import { Projects } from './project';
-import { LoadingScreen } from './loading';
+import { LoadingScreen, Logo, Badge } from './loading';
 
 
 function App() {
   return (
-    <div style={{position:"absolute", top: 50, left: 0, height: "50%", width: "50%"}}>
-      <LoadingScreen/>
+    <div style={{position:"absolute", top: 0, left: 0, height: "100%", width: "100%"}}>
+      <Logo/>
+      <Badge/>
+      <LoadingScreen>
+        <Projects/>
+      </LoadingScreen>
     </div>
     
       
