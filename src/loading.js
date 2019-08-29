@@ -1,7 +1,8 @@
 import React from 'react';
 import './Loading.css'
+import {Link} from 'react-router-dom'
 export const LoadingScreen = (props) => (
-    <div id="namescreen">
+    <div id="loadingscreen" className="max">
         <span className="intro" id="r">R</span>
         <span className="intro" id="y">Y</span>
         <span className="intro" id="a1">A</span>
@@ -15,22 +16,88 @@ export const LoadingScreen = (props) => (
 )
 
 export const Navbar = (props) => (
-    <div className="logo">
+    <div className="logo fadeIn">
         <span className="logo">R&nbsp;</span>
         <span className="logo">YD</span>
         <span className="logo">AA</span>
         <span className="logo">NN</span>
         <span className="logo">&nbsp;G</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Me</span>
+        <Link 
+            to={"/"} 
+            style={{
+                textDecoration: "none", 
+                color: "white", 
+                fontFamily: 'Raleway', 
+                fontWeight: 100
+            }}
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me</Link>
+        <Link 
+            to={"/"} 
+            style={{
+                textDecoration: "none", 
+                color: "white", 
+                fontFamily: 'Raleway', 
+                fontWeight: 100
+            }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume</Link>
+        <Link 
+            to={"/projects"} 
+            style={{
+                textDecoration: "none", 
+                color: "white", 
+                fontFamily: 'Raleway', 
+                fontWeight: 100
+            }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects</Link>
+        <Link 
+            to={"/"} 
+            style={{
+                textDecoration: "none", 
+                color: "white", 
+                fontFamily: 'Raleway', 
+                fontWeight: 100
+            }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Me</Link>
     </div>
 )
 
 export const Badge = (props) => (
-    <div>
-        <span>R&nbsp;</span>
-        <span>&nbsp;D</span>
+    <div className="shortFadeIn page maxswitch">
+        <span className="badge" style={{color: "black"}}>R&nbsp;</span>
+        <span className="badge" style={{color: "black"}}>&nbsp;D</span>
+    </div>
+)
+
+export const Footer = (props) => (
+    <div id="footer" className="fadeIn">
+        <span className="footer">
+            <a href="mailto:rvdang@uci.edu">
+                <img className="icon" src={require("./icons/mail.svg")}/>
+            </a>
+        </span>
+        <span className="footer">
+            <a href={"https://github.com/rvdang"}>
+                <img className="icon" src={require("./icons/github.svg")}/>
+            </a>
+        </span>
+        <span className="footer">
+            <a href={"https://linkedin.com/in/rvdang"}>
+                <img className="icon" src={require("./icons/linkedin.svg")}/>
+            </a>
+        </span>
+    </div>
+)
+
+export const AboutMe = (props) => (
+    <div className="shortFadeIn page vertical maxswitch">
+        <span style={{color: "black", textAlign: "center", lineHeight: 1.5}}>
+            Hello! My name is Ryan Dang. <br/>
+            I am currently 21 years old and I attend the University of California, Irvine as a Computer Science Student. <br/>
+            {/* I currently work as a back-end software developer for Ardent Labs.<br/>
+            During my time at work, I handle all things API for all of our internal applications.<br/>
+            I like to think I am pretty laid back.<br/>
+            When I am not at work, I like to<br/>
+            Work on my web applications<br/>
+            Hang out with friends<br/>
+            Rock climb at Sender One in Santa Ana<br/>
+            And catch up with old friends on League of Legends.<br/> */}
+        </span>
     </div>
 )

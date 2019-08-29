@@ -1,17 +1,26 @@
 import React from 'react';
 import './App.css';
 import { Projects } from './project';
-import { LoadingScreen, Navbar } from './loading';
+import { LoadingScreen, Navbar, Badge, Footer, AboutMe } from './loading';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 function App() {
   return (
-    <div style={{display: "flex", flexDirection: "column", position:"absolute", top: 0, left: 0, height: "100%", width: "100%"}}>
-      <Navbar/>
       <LoadingScreen>
-        <Projects/>
+        
+          <div className="max fadeIn">
+          <Router>
+            <Navbar/>
+            <Switch>
+              <Route exact path='/' component={AboutMe}/>
+              <Route exact path='/projects' component={Projects}/>
+            </Switch>
+            </Router>
+            <Footer/>
+          </div>
+        
       </LoadingScreen>
-    </div>
     
       
   );

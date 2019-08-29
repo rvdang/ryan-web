@@ -19,9 +19,9 @@ const Project = posed.div({
     fullscreen: {
         position: "fixed",
         right: 0,
-        bottom: 0,
+        bottom: 34,
         width: '100%',
-        height: 'calc(100% - 58px)',
+        height: 'calc(100% - 92px)',
         transition: {duration: 500},
         flip: true,
         applyAtEnd: {
@@ -66,13 +66,13 @@ export class Projects extends React.Component{
 
     render(){
         return (
-            <div className="projectdiv">
-                <div className="name">
+            <div className="shortFadeIn projectdiv maxswitch">
+                <div className="shortFadeIn projectrow">
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                 </div>
-                <div className="name">
+                <div className="shortFadeIn projectrow">
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
                     <ProjectThumbnail projectOpened={this.state.projectOpened} onClick={this.handleClick}/>
@@ -103,7 +103,7 @@ export class ProjectThumbnail extends React.Component{
             <StyledProject
                 pose={isOpen ? "fullscreen" : projectOpened ? "hidden" : isHover ? "zoomed" : "thumbnail"}
                 initialPose={"thumbnail"}
-                // onClick={this.handleClick}
+                onClick={this.handleClick}
                 onMouseEnter={() => this.setState({isHover: true})}
                 onMouseLeave={() => this.setState({isHover: false})}
             />

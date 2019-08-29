@@ -1,12 +1,12 @@
-#namescreen {
-  position: relative;
-  height: 100%;
-  width: 100%;
+#loadingscreen {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
 }
 
 .projectdiv{
-  height: 100%;
-  width: 100%;
   flex: 1 1 auto;
   background-color: #FFF;
   display: flex;
@@ -15,7 +15,14 @@
   align-items: center;
 }
 
-.projectdiv, .logo {
+.shortFadeIn {
+  opacity: 0;
+  animation: fadeIn 750ms ease 1;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+.fadeIn {
   opacity: 0;
   animation: fadeIn 1s ease 1;
   animation-fill-mode: forwards;
@@ -23,9 +30,32 @@
   pointer-events: none;
 }
 
+.max {
+  height: 100%;
+  width: 100%;
+}
+
+.maxswitch {
+  height: calc(100% - 92px);
+  width: 100%;
+}
+
+.page {
+  flex: 1 1 auto;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
 @keyframes fadeIn{
   0%{
     opacity: 0;
+    pointer-events: none;
   }
   100%{
     opacity: 1;
@@ -33,9 +63,7 @@
   }
 }
 
-
-
-.name {
+.projectrow {
   display: flex;
   flex-direction: row;
 }
