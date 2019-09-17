@@ -6,9 +6,9 @@
   left: 0;
 }
 
-.projectdiv{
+.projectdiv {
   flex: 1 1 auto;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@
 
 .page {
   flex: 1 1 auto;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,12 +52,16 @@
   flex-direction: column;
 }
 
-@keyframes fadeIn{
-  0%{
+.horizontal {
+  flex-direction: row;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
     pointer-events: none;
   }
-  100%{
+  100% {
     opacity: 1;
     pointer-events: all;
   }
