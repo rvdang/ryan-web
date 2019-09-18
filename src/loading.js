@@ -1,6 +1,7 @@
 import React from "react";
 import "./Loading.css";
 import { Link } from "react-router-dom";
+import { Mail, GitHub, LinkedIn } from "./icons/iconSVG";
 export const LoadingScreen = props => (
   <div id="loadingscreen" className="max">
     <span className="intro" id="r">
@@ -50,7 +51,7 @@ export const Navbar = props => (
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me
     </Link>
     <Link
-      to={"/"}
+      to={"/resume"}
       style={{
         textDecoration: "none",
         color: "white",
@@ -72,7 +73,7 @@ export const Navbar = props => (
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects
     </Link>
     <Link
-      to={"/"}
+      to={"/contact"}
       style={{
         textDecoration: "none",
         color: "white",
@@ -100,56 +101,18 @@ export const Footer = props => (
   <div id="footer" className="fadeIn">
     <span className="footer">
       <a href="mailto:rvdang@uci.edu">
-        <img className="icon" src={require("./icons/mail.svg")} />
+        <Mail className="icon" />
       </a>
     </span>
     <span className="footer">
       <a href={"https://github.com/rvdang"}>
-        <img className="icon" src={require("./icons/github.svg")} />
+        <GitHub className="icon" />
       </a>
     </span>
     <span className="footer">
       <a href={"https://linkedin.com/in/rvdang"}>
-        <img className="icon" src={require("./icons/linkedin.svg")} />
+        <LinkedIn className="icon" />
       </a>
-    </span>
-  </div>
-);
-
-export const AboutMe = props => (
-  <div className="shortFadeIn page horizontal maxswitch">
-    <img
-      src={require("./images/profilepic.png")}
-      height="432px"
-      style={{ padding: "10px" }}
-    ></img>
-    <span
-      style={{
-        width: "500px",
-        color: "black",
-        textAlign: "left",
-        lineHeight: 1.5,
-        wordWrap: "break-word",
-        padding: "10px"
-      }}
-    >
-      Hello! My name is Ryan Dang.
-      <br />
-      <br /> I am currently 21 years old and I attend the University of
-      California, Irvine as a Computer Science Student.
-      <br />
-      <br /> I currently work as a back-end developer for Ardent Labs where
-      handle all things API for all of our interal applications. This includes a
-      mobile application for students to practice problems, and two web
-      applications for management of classes and students, emailing parents and
-      more. When I am not too busy with API tasks at work, I like to play with
-      front-end development to better understand the way our developers use our
-      API. Since doing so, I've gained a decent understanding of React, although
-      I still have much to learn to attain my goal of full-stack development.
-      <br />
-      <br />
-      During my free time, I rock climb at Sender One in Santa Ana, work on some
-      web applications, and catch up with old friends on League of Legends.
     </span>
   </div>
 );
