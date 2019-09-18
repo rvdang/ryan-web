@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ad64511.chunk.css",
+    "main.js": "/static/js/main.49a3dc71.chunk.js",
+    "main.js.map": "/static/js/main.49a3dc71.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.ca414a2d.js",
+    "runtime~main.js.map": "/static/js/runtime~main.ca414a2d.js.map",
+    "static/js/2.a0c0eacc.chunk.js": "/static/js/2.a0c0eacc.chunk.js",
+    "static/js/2.a0c0eacc.chunk.js.map": "/static/js/2.a0c0eacc.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fcb58ef861dbdddac32029aeca838d73.js": "/precache-manifest.fcb58ef861dbdddac32029aeca838d73.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8ad64511.chunk.css.map": "/static/css/main.8ad64511.chunk.css.map",
+    "static/media/Ryan Dang Resume.pdf": "/static/media/Ryan Dang Resume.6a1005c9.pdf",
+    "static/media/profilepic.png": "/static/media/profilepic.2fa4b3a4.png"
+  }
+}
