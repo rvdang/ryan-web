@@ -8,12 +8,12 @@ export const Contact = props => (
       </a>
     </span>
     <span className="contact">
-      <a className="contact" href={"https://linkedin.com/in/rvdang"}>
+      <a className="contact" href={"https://github.com/rvdang"}>
         <GitHub className="contact" />
       </a>
     </span>
     <span className="contact">
-      <a className="contact" href={"https://github.com/rvdang"}>
+      <a className="contact" href={"https://linkedin.com/in/rvdang"}>
         <LinkedIn className="contact" />
       </a>
     </span>
