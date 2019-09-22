@@ -1,6 +1,6 @@
 import React from "react";
 import resume from "./documents/Ryan Dang Resume.pdf";
-export const Resume = props => (
+export const Resume2 = props => (
   <div id="resume" className="shortFadeIn page vertical maxswitch">
     <object data={resume} type="application/pdf" width="100%" height="100%">
       <p style={{ textAlign: "center" }}>

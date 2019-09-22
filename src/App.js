@@ -5,7 +5,7 @@ import { LoadingScreen, Navbar, Badge, Footer } from "./loading";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { AboutMe } from "./AboutMe";
 import { Contact } from "./Contact";
-import { Resume } from "./Resume";
+import { Resume } from "./pages/resume";
 
 function App() {
   return (

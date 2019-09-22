@@ -85,3 +85,78 @@ svg.contact {
 div#contact {
   flex-direction: row-reverse;
 }
+
+.resume{
+  max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.line {
+  width: 100%;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  margin-bottom: 1em;
+  border-width: 4px 0px 0px;
+  border-image: initial;
+  border-top: 4px solid rgb(0, 0, 0);
+}
+
+.categoryHeading{
+  color: black;
+  font-size: 32px; 
+  line-height: 1;
+  font-family: 'Raleway';
+  font-weight: 900;
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+}
+
+.nameStyle{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 48px;
+  font-family: 'Raleway';
+}
+
+.paragraphStyle {
+  color: #30343F;
+  font-size: 16px; 
+  line-height: 1.5;
+  font-family: 'Raleway';
+  margin: 0;
+}
+
+.buttonStyle {
+  cursor: pointer;
+  pointer-events: all;
+  color: #48639C;
+  font-weight: 900;
+}
+
+.buttonStyle:hover {
+  color: #FE938C;
+}
+
+.splitTextDiv {
+  display: flex; 
+  -webkit-box-pack: justify;
+  margin: 0;
+  padding: 0; 
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+ul {
+  margin: 0;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
