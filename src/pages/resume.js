@@ -9,10 +9,12 @@ const P = props => <p className="paragraphStyle" style={props.style || {}}>
     {props.children}
 </p>
 
-const EntryHeading = ({ title, duration, company, location }) => (
+const EntryHeading = ({ title, duration, company, location }) => {
+    const titleElement = typeof title === "string" ? <P style={{ fontWeight: 900, fontSize: "20px" }}>{title}</P> : title
+    return(
     <div flexDirection="column">
         <div className="splitTextDiv">
-            <P style={{ fontWeight: 900, fontSize: "20px" }}>{title}</P>
+            {titleElement}
             <div style={{ display: "flex", flexDirection: "column-reverse" }}>
                 <P style={{ fontWeight: 600 }}>{duration}</P>
             </div>
@@ -23,7 +25,7 @@ const EntryHeading = ({ title, duration, company, location }) => (
         </div>
     </div>
 
-)
+)}
 
 export const Resume = () => {
     const componentRef = useRef();
@@ -38,7 +40,24 @@ export const Resume = () => {
                     </div>
                 </div>
                 <hr className="line"></hr>
-                <P>I am a back-end software developer with a passion for teaching others the joy of programming</P>
+                <P style={{fontWeight: 900}}>I am a back-end software developer with a passion for teaching others the joy of programming</P>
+                <H2>EDUCATION</H2>
+                <EntryHeading
+                    title="BS in Computer Science from the University of California, Irvine"
+                    duration="Sep 2016 - Jun 2020"
+                    company="3.764 GPA"
+                    location="Irvine, CA" />
+                <P style={{marginTop: "5px"}}>Relevant Coursework</P>
+                <ul style={{marginTop: 2}}>
+                    <li><P>Graph Algorithms, Data Structures, Languages, Embedded Software, Data Management, Digital Logic, Statistics</P></li>
+                </ul>
+                <H2>PROFICIENCIES</H2>
+                <ul>
+                    <li><P>Javascript, Python, C/C++, Java, HTML/CSS</P></li>
+                    <li><P>GraphQL, ReQL for RethinkDB, SQL</P></li>
+                    <li><P>Git, Jira</P></li>
+                    <li><P>React, Jest, JQuery, ElectronJS</P></li>
+                </ul>
                 <H2>PROFESSIONAL EXPERIENCE</H2>
                 <EntryHeading
                     title="Back-end Software Engineer"
@@ -50,9 +69,11 @@ export const Resume = () => {
                     <li><P>Manage and implement AWS and Twilio services for scheduled email and SMS notifications</P></li>
                     <li><P>Review pull requests for maintainability, functionality and structure</P></li>
                     <li><P>Create unit tests with Jest for continuous delivery testing</P></li>
+                    <li><P>Interview potential backend engineers and iterns</P></li>
                     <li><P>Refactored statistics system for tracking student performance</P></li>
                     <li><P>Compiled reports for enrollment data between quarters</P></li>
                     <li><P>Patched API security flaw which allowed unrestricted access to private data</P></li>
+                    <li><P>Introduced local storage of fetched data to API which greatly improved run time of heavily nested functions containing fetches</P></li>
                 </ul>
                 <EntryHeading
                     title="Teacher"
@@ -99,16 +120,22 @@ export const Resume = () => {
                     <li><P>Help set up personal website, linkedin, resume, applying to first internships</P></li>
                     <li><P>Mentor and guide through mentee's courses, projects, and careers</P></li>
                 </ul>
+                <EntryHeading
+                    title="Rock Climbing Team"
+                    duration="Sep 2018 - Present"
+                    company="Climber"
+                    location="Irvine, CA" />
                 <H2>PROJECTS</H2>
                 <EntryHeading
-                    title={<P>TFT Overlay <i>Electron JS, React/HTML/CSS, Javascript</i></P>}
+                    title={<P style={{ fontWeight: 900, fontSize: "20px" }}>TFT Overlay <i style={{fontWeight: 300, fontSize: "16px"}}>Electron JS, React/HTML/CSS, Javascript</i></P>}
                     duration={<a href="https://github.com/rvdang/TFTOverlay" className="paragraphStyle buttonStyle">Github Link</a>}
                     company="An overlay for the League of Legends game mode Teamfight Tactics to track and display item combinations and descriptions"
                     location="" />
                 <EntryHeading
-                    title={<P>Job buddy <i>HTML/CSS, Javascript, JQuery</i></P>}
+                    title={<P style={{ fontWeight: 900, fontSize: "20px" }}>Job buddy <i style={{fontWeight: 300, fontSize: "16px"}}>HTML/CSS, Javascript, JQuery</i></P>}
                     duration={<a href="https://devpost.com/software/job-buddy-doyvrt" className="paragraphStyle buttonStyle">Devpost Link</a>}
-                    company="An overlay for the League of Legends game mode Teamfight Tactics to track and display item combinations and descriptions"
+                    company="Best Web/Mobile Application at HackUCI 2018. Application to store job description information from LinkedIn job postings for
+                    future reference"
                     location="" />
             </div>
             <ReactToPrint
