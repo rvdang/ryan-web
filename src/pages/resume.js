@@ -84,7 +84,7 @@ export const Resume = () => {
                     <li><P>Developed coursework from scratch</P></li>
                     <li>
                         <P>Taught algorithms and data structures to middle and high school students for the USACO competition&nbsp;-&nbsp;
-                            <a href="https://repl.it/repls/folder/usaco" className="paragraphStyle buttonStyle">Repl Folder</a>
+                            <a href="https://repl.it/@rvdang" className="paragraphStyle buttonStyle">Repl Folder</a>
                         </P></li>
                     <li><P>Taught a focus on working through a problem on paper rather than immediately jumping in</P></li>
                     <li><P>Taught javascript, HTML, and CSS to middle school students</P></li>
