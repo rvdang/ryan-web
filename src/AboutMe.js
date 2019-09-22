@@ -3,7 +3,7 @@ export const AboutMe = props => (
   <div className="shortFadeIn page horizontal maxswitch">
     <img
       className="shortFadeIn"
-      src={require("./images/profilepic.png")}
+      src={require("./images/ryan_headshot.jpeg")}
       height="432px"
       style={{ padding: "10px" }}
     ></img>
