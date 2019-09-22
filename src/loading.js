@@ -61,7 +61,7 @@ export const Navbar = props => (
     >
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume
     </Link>
-    <Link
+    {/* <Link
       to={"/projects"}
       style={{
         textDecoration: "none",
@@ -71,7 +71,7 @@ export const Navbar = props => (
       }}
     >
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects
-    </Link>
+    </Link> */}
     <Link
       to={"/contact"}
       style={{
