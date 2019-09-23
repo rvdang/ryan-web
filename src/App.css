@@ -87,6 +87,7 @@ div#contact {
 }
 
 .resume{
+  z-index: 2;
   max-width: 750px;
     margin-left: auto;
     margin-right: auto;

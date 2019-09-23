@@ -2,6 +2,7 @@ import React from "react";
 export const GitHub = props => (
   <svg
     className={props.className}
+    id="github"
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +14,7 @@ export const GitHub = props => (
 export const LinkedIn = props => (
   <svg
     className={props.className}
+    id="linkedin"
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"

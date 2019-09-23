@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Projects } from "./project";
-import { LoadingScreen, Navbar, Badge, Footer } from "./loading";
+import { LoadingScreen, Navbar, Badge, Footer, Mountain } from "./loading";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { AboutMe } from "./AboutMe";
 import { Contact } from "./Contact";
@@ -20,6 +20,7 @@ function App() {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </Router>
+        <Mountain/>
         <Footer />
       </div>
     </LoadingScreen>

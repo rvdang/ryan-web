@@ -2,6 +2,8 @@ import React from "react";
 import "./Loading.css";
 import { Link } from "react-router-dom";
 import { Mail, GitHub, LinkedIn } from "./icons/iconSVG";
+
+import mountain from './images/mountain.svg'
 export const LoadingScreen = props => (
   <div id="loadingscreen" className="max">
     <span className="intro" id="r">
@@ -116,3 +118,8 @@ export const Footer = props => (
     </span>
   </div>
 );
+
+
+export const Mountain = props => (
+  <img src={require("./images/mountain.svg")} style={{width: "20%", position: "fixed", bottom: "33px", right: 0}}/>
+)

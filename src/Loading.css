@@ -33,11 +33,11 @@ svg.contact {
   width: 150px;
   padding: 5px;
   margin: 0;
-  fill: #a5a299;
+  fill: #5D737E;
 }
 
 svg:hover {
-  fill: black;
+  fill: #231F20;
 }
 
 a {
@@ -68,8 +68,8 @@ div.logo {
   max-width: ;width: 100%;
   opacity: 0;
   display: flex;
-  border: 10px solid #a5a299;
-  background-color: #a5a299;
+  border: 10px solid #5D737E;
+  background-color: #5D737E;
   align-items: center;
 }
 
@@ -81,9 +81,9 @@ div#footer {
   opacity: 0;
   display: flex;
   flex-direction: row-reverse;
-  border: 5px solid #a5a299;
+  border: 5px solid #5D737E;
   border-bottom: 1px;
-  background-color: #a5a299;
+  background-color: #5D737E;
   justify-content: flex;
 }
 
