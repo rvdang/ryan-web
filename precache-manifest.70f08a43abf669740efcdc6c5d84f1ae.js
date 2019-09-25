@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f1791233a3fc09bd2f20f6af317de6c",
+    "revision": "c04d1bc308a6109667efb91c1c291590",
     "url": "/index.html"
   },
   {
-    "revision": "76798b63cd28b9bfa9be",
-    "url": "/static/css/main.cdb7d147.chunk.css"
+    "revision": "daee055eedcaa5a9e6c7",
+    "url": "/static/css/main.d7be8a59.chunk.css"
   },
   {
-    "revision": "aebdfc82dd85c8c2a11f",
-    "url": "/static/js/2.1a987db0.chunk.js"
+    "revision": "fd6753fc9ac27487f5f7",
+    "url": "/static/js/2.c3bd26c1.chunk.js"
   },
   {
-    "revision": "76798b63cd28b9bfa9be",
-    "url": "/static/js/main.68ca7259.chunk.js"
+    "revision": "daee055eedcaa5a9e6c7",
+    "url": "/static/js/main.ab48ebd6.chunk.js"
   },
   {
     "revision": "bfc15fc6234827e44ab7",
     "url": "/static/js/runtime~main.cc96834c.js"
+  },
+  {
+    "revision": "6a1005c9bec63eba7e40d690b728a7fe",
+    "url": "/static/media/Ryan Dang Resume.6a1005c9.pdf"
   },
   {
     "revision": "aac5889ddbac0cd9c02bbc2db01f417d",
