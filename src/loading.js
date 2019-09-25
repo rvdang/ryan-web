@@ -48,10 +48,12 @@ export const Navbar = props => (
           textDecoration: "none",
           color: "white",
           fontFamily: "Raleway",
-          fontWeight: 100
+          fontWeight: 100,
+          paddingLeft: 20,
+          paddingTop: 6,
         }}
       >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me
+         About Me
     </Link>
       <Link
         to={"/resume"}
@@ -59,10 +61,12 @@ export const Navbar = props => (
           textDecoration: "none",
           color: "white",
           fontFamily: "Raleway",
-          fontWeight: 100
+          fontWeight: 100,
+          paddingLeft: 15,
+          paddingTop: 6,
         }}
       >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume
+         Resume
     </Link>
       {/* <Link
       to={"/projects"}
@@ -81,10 +85,12 @@ export const Navbar = props => (
           textDecoration: "none",
           color: "white",
           fontFamily: "Raleway",
-          fontWeight: 100
+          fontWeight: 100,
+          paddingLeft: 15,
+          paddingTop: 6,
         }}
       >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Me
+         Contact Me
     </Link>
     </div>
     <div id="footer" className="fadeIn">
