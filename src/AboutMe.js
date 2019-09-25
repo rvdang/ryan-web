@@ -4,12 +4,11 @@ export const AboutMe = props => (
     <img
       className="shortFadeIn"
       src={require("./images/ryan_headshot.jpeg")}
-      height="432px"
-      style={{ padding: "10px" , borderRadius: "50%", marginBottom: "25px"}}
+      style={{ padding: "10px" , borderRadius: "50%", marginBottom: "25px", maxWidth: "432px", height: "auto"}}
     ></img>
     <span
       style={{
-        width: "750px",
+        maxWidth: "750px",
         color: "black",
         textAlign: "left",
         lineHeight: 1.5,
