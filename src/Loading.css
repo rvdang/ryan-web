@@ -20,19 +20,27 @@
   #nav, #climbing,#printbutton, #extraspace {
       display: none;
   }
+  .introDesc{
+    margin-bottom: 15px;
+  }
   .paragraphStyle {
-    font-size: 12px;
+    font-size: 13.5px;
     color: black;
   }
   .titleHeading {
-    font-size: 14px;
+    font-size: 15px;
   }
   .categoryHeading{
-    font-size: 18px;
+    margin-top: 3px;
+    font-size: 16px;
     color: black;
   }
   .nameStyle{
     font-size: 32px;
+  }
+  ul, hr{
+    margin: 0;
+    margin-bottom: 0;
   }
 }
 

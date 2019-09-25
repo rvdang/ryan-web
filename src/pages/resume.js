@@ -42,7 +42,7 @@ export const Resume = () => {
                     </div>
                 </div>
                 <hr className="line"></hr>
-                <P style={{fontWeight: 900}}>I am a back-end software developer with a passion for teaching others the joy of programming</P>
+                <P className="introDesc" style={{fontWeight: 900}}>I am a back-end software developer with a passion for teaching others the joy of programming</P>
                 <H2>EDUCATION</H2>
                 <EntryHeading
                     title="BS in Computer Science from the University of California, Irvine"
