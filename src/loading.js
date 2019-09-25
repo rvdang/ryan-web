@@ -51,9 +51,10 @@ export const Navbar = props => (
           fontWeight: 100,
           paddingLeft: 20,
           paddingTop: 6,
+          textAlign: 'center',
         }}
       >
-         About Me
+         About&nbsp;Me
     </Link>
       <Link
         to={"/resume"}
@@ -64,6 +65,7 @@ export const Navbar = props => (
           fontWeight: 100,
           paddingLeft: 15,
           paddingTop: 6,
+          textAlign: 'center',
         }}
       >
          Resume
@@ -88,9 +90,10 @@ export const Navbar = props => (
           fontWeight: 100,
           paddingLeft: 15,
           paddingTop: 6,
+          textAlign: 'center',
         }}
       >
-         Contact Me
+         Contact&nbsp;Me
     </Link>
     </div>
     <div id="footer" className="fadeIn">
