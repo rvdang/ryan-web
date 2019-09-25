@@ -1,23 +1,25 @@
 import React from "react";
 export const AboutMe = props => (
-  <div className="shortFadeIn page horizontal maxswitch">
+  <div className="shortFadeIn page vertical maxswitch">
     <img
       className="shortFadeIn"
       src={require("./images/ryan_headshot.jpeg")}
       height="432px"
-      style={{ padding: "10px" }}
+      style={{ padding: "10px" , borderRadius: "50%", marginBottom: "25px"}}
     ></img>
     <span
       style={{
-        width: "500px",
+        width: "750px",
         color: "black",
         textAlign: "left",
         lineHeight: 1.5,
         wordWrap: "break-word",
-        padding: "10px"
+        padding: "10px",
+        textAlign: "center",
+        fontSize: "20px",
       }}
     >
-      Hello! My name is Ryan Dang.
+      <strong style={{fontSize: "32px"}}>Hello! My name is Ryan Dang</strong>
       <br />
       <br /> I am currently 21 years old, and I attend the University of
       California, Irvine as a Computer Science Student.
@@ -28,7 +30,7 @@ export const AboutMe = props => (
       applications for management of classes and students. On occasion, I like
       to play with front-end development to better understand the way our
       developers use our API. Since doing so, I've gained a decent understanding
-      of React but I still have much to learn to attain my goal of full-stack
+      of React, but I still have much to learn to attain my goal of full-stack
       development.
       <br />
       <br />
