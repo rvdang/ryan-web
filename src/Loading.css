@@ -21,7 +21,7 @@
       display: none;
   }
   .introDesc{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .paragraphStyle {
     font-size: 13.5px;
@@ -29,10 +29,11 @@
   }
   .titleHeading {
     font-size: 15px;
+    font-weight: 600;
   }
   .categoryHeading{
-    margin-top: 3px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 17px;
     color: black;
   }
   .nameStyle{
