@@ -49,8 +49,8 @@ export const Navbar = props => (
           color: "white",
           fontFamily: "Raleway",
           fontWeight: 100,
-          paddingLeft: 20,
-          paddingTop: 6,
+          marginLeft: 20,
+          marginTop: 6,
           textAlign: 'center',
         }}
       >
@@ -63,8 +63,8 @@ export const Navbar = props => (
           color: "white",
           fontFamily: "Raleway",
           fontWeight: 100,
-          paddingLeft: 15,
-          paddingTop: 6,
+          marginLeft: 15,
+          marginTop: 6,
           textAlign: 'center',
         }}
       >
@@ -88,8 +88,8 @@ export const Navbar = props => (
           color: "white",
           fontFamily: "Raleway",
           fontWeight: 100,
-          paddingLeft: 15,
-          paddingTop: 6,
+          marginLeft: 15,
+          marginTop: 6,
           textAlign: 'center',
         }}
       >
