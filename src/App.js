@@ -20,8 +20,8 @@ function App() {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </Router>
-        <Mountain/>
-        <Footer />
+        {/* <Mountain/> */}
+        {/* <Footer /> */}
       </div>
     </LoadingScreen>
   );

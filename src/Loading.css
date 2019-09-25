@@ -21,23 +21,34 @@ img, a {
 }
 
 svg.icon {
-  height: 25px;
-  width: 25px;
+  height: 35px;
+  width: 35px;
   padding: 0;
   margin: 0;
+  margin-right: 5px;
   fill: white;
 }
 
 svg.contact {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   padding: 5px;
   margin: 0;
-  fill: #5D737E;
+  fill: #231F20;
 }
 
-svg:hover {
-  fill: #231F20;
+svg.contact#mail:hover {
+  fill: #B23121;
+}
+svg.contact#linkedin:hover {
+  fill:  #0077B5;
+}
+svg.contact#github:hover {
+  fill: #28a745;
+}
+
+svg.icon:hover {
+  fill: #FF4365;
 }
 
 a {
@@ -65,26 +76,22 @@ span {
 }
 
 div.logo {
-  max-width: ;width: 100%;
+  width: 100%;
   opacity: 0;
   display: flex;
-  border: 10px solid #5D737E;
-  background-color: #5D737E;
+  border: 10px solid #231F20;
+  background-color: #231F20;
   align-items: center;
 }
 
 div#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   opacity: 0;
   display: flex;
   flex-direction: row-reverse;
-  border: 5px solid #5D737E;
-  border-bottom: 1px;
-  background-color: #5D737E;
+  border-right: 10px solid #231F20;
+  background-color: #231F20;
   justify-content: flex;
+  align-items: 'center';
 }
 
 span.logo,

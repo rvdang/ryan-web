@@ -23,7 +23,7 @@ export const AboutMe = props => (
       California, Irvine as a Computer Science Student.
       <br />
       <br /> I currently work as a back-end developer for Ardent Labs, where I
-      handle all things API for all of our internal applications. This includes a
+      handle all things API for our three internal applications. This includes a
       mobile application for students to practice problems, and two web
       applications for management of classes and students. On occasion, I like
       to play with front-end development to better understand the way our

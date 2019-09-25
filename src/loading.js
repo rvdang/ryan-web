@@ -35,35 +35,36 @@ export const LoadingScreen = props => (
 );
 
 export const Navbar = props => (
-  <div className="logo fadeIn">
-    <span className="logo">R&nbsp;</span>
-    <span className="logo">YD</span>
-    <span className="logo">AA</span>
-    <span className="logo">NN</span>
-    <span className="logo">&nbsp;G</span>
-    <Link
-      to={"/"}
-      style={{
-        textDecoration: "none",
-        color: "white",
-        fontFamily: "Raleway",
-        fontWeight: 100
-      }}
-    >
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me
+  <div className="logo fadeIn" style={{ justifyContent: "space-between" }}>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <span className="logo">R&nbsp;</span>
+      <span className="logo">YD</span>
+      <span className="logo">AA</span>
+      <span className="logo">NN</span>
+      <span className="logo">&nbsp;G</span>
+      <Link
+        to={"/"}
+        style={{
+          textDecoration: "none",
+          color: "white",
+          fontFamily: "Raleway",
+          fontWeight: 100
+        }}
+      >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Me
     </Link>
-    <Link
-      to={"/resume"}
-      style={{
-        textDecoration: "none",
-        color: "white",
-        fontFamily: "Raleway",
-        fontWeight: 100
-      }}
-    >
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume
+      <Link
+        to={"/resume"}
+        style={{
+          textDecoration: "none",
+          color: "white",
+          fontFamily: "Raleway",
+          fontWeight: 100
+        }}
+      >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume
     </Link>
-    {/* <Link
+      {/* <Link
       to={"/projects"}
       style={{
         textDecoration: "none",
@@ -74,18 +75,37 @@ export const Navbar = props => (
     >
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects
     </Link> */}
-    <Link
-      to={"/contact"}
-      style={{
-        textDecoration: "none",
-        color: "white",
-        fontFamily: "Raleway",
-        fontWeight: 100
-      }}
-    >
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Me
+      <Link
+        to={"/contact"}
+        style={{
+          textDecoration: "none",
+          color: "white",
+          fontFamily: "Raleway",
+          fontWeight: 100
+        }}
+      >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Me
     </Link>
+    </div>
+    <div id="footer" className="fadeIn">
+      <span className="footer">
+        <a href="mailto:rvdang@uci.edu">
+          <Mail className="icon" />
+        </a>
+      </span>
+      <span className="footer">
+        <a href={"https://github.com/rvdang"}>
+          <GitHub className="icon" />
+        </a>
+      </span>
+      <span className="footer">
+        <a href={"https://linkedin.com/in/rvdang"}>
+          <LinkedIn className="icon" />
+        </a>
+      </span>
+    </div>
   </div>
+
 );
 
 export const Badge = props => (
@@ -121,5 +141,5 @@ export const Footer = props => (
 
 
 export const Mountain = props => (
-  <img src={require("./images/mountain.svg")} style={{width: "20%", position: "fixed", bottom: "33px", right: 0}}/>
+  <img src={require("./images/mountain.svg")} style={{ width: "20%", position: "fixed", bottom: "33px", right: 0 }} />
 )

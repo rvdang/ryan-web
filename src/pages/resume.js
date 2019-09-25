@@ -145,7 +145,6 @@ export const Resume = () => {
                 content={() => componentRef.current}
             />
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
         </div>
     )
 };
