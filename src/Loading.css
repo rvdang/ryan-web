@@ -11,6 +11,31 @@
   --ani-delay: 250ms;
 }
 
+.titleHeading{ 
+  font-weight: 900; 
+  font-size: 20px;
+}
+
+@media print {
+  #nav, #climbing,#printbutton, #extraspace {
+      display: none;
+  }
+  .paragraphStyle {
+    font-size: 12px;
+    color: black;
+  }
+  .titleHeading {
+    font-size: 14px;
+  }
+  .categoryHeading{
+    font-size: 18px;
+    color: black;
+  }
+  .nameStyle{
+    font-size: 32px;
+  }
+}
+
 img, a {
   user-drag: none; 
   user-select: none;

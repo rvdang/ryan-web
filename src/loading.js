@@ -35,7 +35,7 @@ export const LoadingScreen = props => (
 );
 
 export const Navbar = props => (
-  <div className="logo fadeIn" style={{ justifyContent: "space-between" }}>
+  <div id="nav" className="logo fadeIn" style={{ justifyContent: "space-between" }}>
     <div style={{ display: 'flex', alignItems: 'center' }}>
       <span className="logo">R&nbsp;</span>
       <span className="logo">YD</span>

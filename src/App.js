@@ -6,6 +6,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { AboutMe } from "./AboutMe";
 import { Contact } from "./Contact";
 import { Resume } from "./pages/resume";
+import { CompactResume } from "./pages/compactresume";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/resume" component={Resume} />
             {/* <Route exact path="/projects" component={Projects} /> */}
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/resume/compact" component={CompactResume} />
           </Switch>
         </Router>
         {/* <Mountain/> */}

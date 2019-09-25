@@ -1,18 +1,20 @@
 import React, { useRef } from "react";
 import ReactToPrint from 'react-to-print'
+import "../Loading.css";
+
 
 const H2 = props => <p className="categoryHeading">
     {props.children}
 </p>
 
-const P = props => <p className="paragraphStyle" style={props.style || {}}>
+const P = props => <p className={"paragraphStyle " + props.className} style={props.style || {}}>
     {props.children}
 </p>
 
-const EntryHeading = ({ title, duration, company, location }) => {
-    const titleElement = typeof title === "string" ? <P style={{ fontWeight: 900, fontSize: "20px" }}>{title}</P> : title
+const EntryHeading = ({ title, duration, company, location, id }) => {
+    const titleElement = typeof title === "string" ? <P className="titleHeading">{title}</P> : title
     return(
-    <div flexDirection="column">
+    <div id={id} flexDirection="column">
         <div className="splitTextDiv">
             {titleElement}
             <div style={{ display: "flex", flexDirection: "column-reverse" }}>
@@ -121,30 +123,34 @@ export const Resume = () => {
                     <li><P>Mentor and guide through mentee's courses, projects, and careers</P></li>
                 </ul>
                 <EntryHeading
+                    id="climbing"
                     title="Rock Climbing Team"
                     duration="Sep 2018 - Present"
                     company="Climber"
                     location="Irvine, CA" />
                 <H2>PROJECTS</H2>
                 <EntryHeading
-                    title={<P style={{ fontWeight: 900, fontSize: "20px" }}>TFT Overlay <i style={{fontWeight: 300, fontSize: "16px"}}>Electron JS, React/HTML/CSS, Javascript</i></P>}
+                    title={<P className="titleHeading">TFT Overlay <i style={{fontWeight: 300, fontSize: "16px"}}>Electron JS, React/HTML/CSS, Javascript</i></P>}
                     duration={<a href="https://github.com/rvdang/TFTOverlay" className="paragraphStyle buttonStyle">Github Link</a>}
                     company="An overlay for the League of Legends game mode Teamfight Tactics to track and display item combinations and descriptions"
                     location="" />
                 <EntryHeading
-                    title={<P style={{ fontWeight: 900, fontSize: "20px" }}>Job buddy <i style={{fontWeight: 300, fontSize: "16px"}}>HTML/CSS, Javascript, JQuery</i></P>}
+                    title={<P className="titleHeading">Job buddy <i style={{fontWeight: 300, fontSize: "16px"}}>HTML/CSS, Javascript, JQuery</i></P>}
                     duration={<a href="https://devpost.com/software/job-buddy-doyvrt" className="paragraphStyle buttonStyle">Devpost Link</a>}
                     company="Best Web/Mobile Application at HackUCI 2018. Application to store job description information from LinkedIn job postings for
                     future reference"
                     location="" />
             </div>
+            <div className="splitTextDiv">
             <ReactToPrint
                 trigger={() => (<div className="resume" style={{ padding: 0 }}>
-                    <span className="paragraphStyle buttonStyle">Print this out!</span>
+                    <span id="printbutton" className="paragraphStyle buttonStyle">Print this out!</span>
                 </div>)}
                 content={() => componentRef.current}
             />
-            <p>&nbsp;</p>
+            </div>
+            
+            <p id="extraspace">&nbsp;</p>
         </div>
     )
 };
