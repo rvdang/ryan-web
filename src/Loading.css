@@ -17,7 +17,7 @@
 }
 
 @media print {
-  #nav, #climbing,#printbutton, #extraspace {
+  #nav, #climbing,#printbutton, #extraspace, .link {
       display: none;
   }
   .introDesc{

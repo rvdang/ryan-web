@@ -131,12 +131,12 @@ export const Resume = () => {
                 <H2>PROJECTS</H2>
                 <EntryHeading
                     title={<P className="titleHeading">TFT Overlay <i style={{fontWeight: 300, fontSize: "16px"}}>Electron JS, React/HTML/CSS, Javascript</i></P>}
-                    duration={<a href="https://github.com/rvdang/TFTOverlay" className="paragraphStyle buttonStyle">Github Link</a>}
+                    duration={<a href="https://github.com/rvdang/TFTOverlay" className="link paragraphStyle buttonStyle">Github Link</a>}
                     company="An overlay for the League of Legends game mode Teamfight Tactics to track and display item combinations and descriptions"
                     location="" />
                 <EntryHeading
                     title={<P className="titleHeading">Job buddy <i style={{fontWeight: 300, fontSize: "16px"}}>HTML/CSS, Javascript, JQuery</i></P>}
-                    duration={<a href="https://devpost.com/software/job-buddy-doyvrt" className="paragraphStyle buttonStyle">Devpost Link</a>}
+                    duration={<a href="https://devpost.com/software/job-buddy-doyvrt" className="link paragraphStyle buttonStyle">Devpost Link</a>}
                     company="Best Web/Mobile Application at HackUCI 2018. Application to store job description information from LinkedIn job postings for
                     future reference"
                     location="" />
