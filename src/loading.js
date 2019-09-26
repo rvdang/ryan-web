@@ -42,34 +42,39 @@ export const Navbar = props => (
       <span className="logo">AA</span>
       <span className="logo">NN</span>
       <span className="logo">&nbsp;G</span>
-      <Link
+      <a href="#">
+        <Link
         to={"/"}
         style={{
+          fontSize: "20px",
           textDecoration: "none",
           color: "white",
           fontFamily: "Raleway",
           fontWeight: 100,
           marginLeft: 20,
-          marginTop: 6,
+          marginTop: 4,
           textAlign: 'center',
         }}
       >
          About&nbsp;Me
-    </Link>
+    </Link></a>
+    <a href="#">
       <Link
         to={"/resume"}
         style={{
+          fontSize: "20px",
           textDecoration: "none",
           color: "white",
           fontFamily: "Raleway",
           fontWeight: 100,
           marginLeft: 15,
-          marginTop: 6,
+          marginTop: 4,
           textAlign: 'center',
         }}
       >
          Resume
     </Link>
+    </a>
       {/* <Link
       to={"/projects"}
       style={{
@@ -81,20 +86,24 @@ export const Navbar = props => (
     >
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects
     </Link> */}
+      <a href="#">
+
       <Link
         to={"/contact"}
         style={{
+          fontSize: "20px",
           textDecoration: "none",
           color: "white",
           fontFamily: "Raleway",
           fontWeight: 100,
           marginLeft: 15,
-          marginTop: 6,
+          marginTop: 4,
           textAlign: 'center',
         }}
       >
          Contact&nbsp;Me
     </Link>
+    </a>
     </div>
     <div id="footer" className="fadeIn">
       <span className="footer">
