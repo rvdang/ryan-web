@@ -35,7 +35,9 @@
 }
 
 .maxswitch {
-  height: calc(100% - 92px);
+  position: absolute;
+  top: 59px;
+  height: calc(100% - 59px);
   width: 100%;
 }
 
