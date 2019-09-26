@@ -37,11 +37,11 @@ export const LoadingScreen = props => (
 export const Navbar = props => (
   <div id="nav" className="logo fadeIn" style={{ justifyContent: "space-between" }}>
     <div style={{ display: 'flex', alignItems: 'center' }}>
-      <span className="logo">R&nbsp;</span>
+      <span className="logo" style={{paddingBottom: "19px"}}>R</span>
       <span className="logo">YD</span>
       <span className="logo">AA</span>
       <span className="logo">NN</span>
-      <span className="logo">&nbsp;G</span>
+      <span className="logo" style={{paddingTop: "19px"}}>G</span>
       <a href="#">
         <Link
         to={"/"}
