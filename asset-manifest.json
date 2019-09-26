@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.205ca190.chunk.css",
+    "main.css": "/static/css/main.b6c89a0a.chunk.css",
     "main.js": "/static/js/main.85b43d8c.chunk.js",
     "main.js.map": "/static/js/main.85b43d8c.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.cc96834c.js",
@@ -8,9 +8,9 @@
     "static/js/2.c3bd26c1.chunk.js": "/static/js/2.c3bd26c1.chunk.js",
     "static/js/2.c3bd26c1.chunk.js.map": "/static/js/2.c3bd26c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8950d9c963f30990a2def4e5b9b290a8.js": "/precache-manifest.8950d9c963f30990a2def4e5b9b290a8.js",
+    "precache-manifest.903e36896e585a7706e590d17da625af.js": "/precache-manifest.903e36896e585a7706e590d17da625af.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.205ca190.chunk.css.map": "/static/css/main.205ca190.chunk.css.map",
+    "static/css/main.b6c89a0a.chunk.css.map": "/static/css/main.b6c89a0a.chunk.css.map",
     "static/media/Ryan Dang Resume.pdf": "/static/media/Ryan Dang Resume.6a1005c9.pdf",
     "static/media/mountain.svg": "/static/media/mountain.aac5889d.svg",
     "static/media/ryan_headshot.jpeg": "/static/media/ryan_headshot.57bb89d9.jpeg"
