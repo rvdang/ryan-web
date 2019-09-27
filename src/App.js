@@ -11,7 +11,7 @@ import { CompactResume } from "./pages/compactresume";
 function App() {
   return (
     <LoadingScreen>
-      <meta name="viewport" content="width=1024"/>
+      <meta name="viewport" content="width=1024" />
       <div className="max fadeIn">
         <Router basename="/">
           <Navbar />

@@ -3,7 +3,7 @@ import "./Loading.css";
 import { Link } from "react-router-dom";
 import { Mail, GitHub, LinkedIn } from "./icons/iconSVG";
 
-import mountain from './images/mountain.svg'
+import mountain from "./images/mountain.svg";
 export const LoadingScreen = props => (
   <div id="loadingscreen" className="max">
     <span className="intro" id="r">
@@ -35,46 +35,55 @@ export const LoadingScreen = props => (
 );
 
 export const Navbar = props => (
-  <div id="nav" className="logo fadeIn" style={{ justifyContent: "space-between" }}>
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <span className="logo" style={{paddingBottom: "19px"}}>R</span>
+  <div
+    id="nav"
+    className="logo fadeIn"
+    style={{ justifyContent: "space-between" }}
+  >
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <span className="logo" style={{ paddingBottom: "19px" }}>
+        R
+      </span>
       <span className="logo">YD</span>
       <span className="logo">AA</span>
       <span className="logo">NN</span>
-      <span className="logo" style={{paddingTop: "19px"}}>G</span>
+      <span className="logo" style={{ paddingTop: "19px" }}>
+        G
+      </span>
       <a href="#">
         <Link
-        to={"/"}
-        style={{
-          fontSize: "20px",
-          textDecoration: "none",
-          color: "white",
-          fontFamily: "Raleway",
-          fontWeight: 100,
-          marginLeft: 20,
-          marginTop: 4,
-          textAlign: 'center',
-        }}
-      >
-         About&nbsp;Me
-    </Link></a>
-    <a href="#">
-      <Link
-        to={"/resume"}
-        style={{
-          fontSize: "20px",
-          textDecoration: "none",
-          color: "white",
-          fontFamily: "Raleway",
-          fontWeight: 100,
-          marginLeft: 15,
-          marginTop: 4,
-          textAlign: 'center',
-        }}
-      >
-         Resume
-    </Link>
-    </a>
+          to={"/"}
+          style={{
+            fontSize: "20px",
+            textDecoration: "none",
+            color: "white",
+            fontFamily: "Raleway",
+            fontWeight: 100,
+            marginLeft: 20,
+            marginTop: 4,
+            textAlign: "center"
+          }}
+        >
+          About&nbsp;Me
+        </Link>
+      </a>
+      <a href="#">
+        <Link
+          to={"/resume"}
+          style={{
+            fontSize: "20px",
+            textDecoration: "none",
+            color: "white",
+            fontFamily: "Raleway",
+            fontWeight: 100,
+            marginLeft: 15,
+            marginTop: 4,
+            textAlign: "center"
+          }}
+        >
+          Resume
+        </Link>
+      </a>
       {/* <Link
       to={"/projects"}
       style={{
@@ -87,23 +96,22 @@ export const Navbar = props => (
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects
     </Link> */}
       <a href="#">
-
-      <Link
-        to={"/contact"}
-        style={{
-          fontSize: "20px",
-          textDecoration: "none",
-          color: "white",
-          fontFamily: "Raleway",
-          fontWeight: 100,
-          marginLeft: 15,
-          marginTop: 4,
-          textAlign: 'center',
-        }}
-      >
-         Contact&nbsp;Me
-    </Link>
-    </a>
+        <Link
+          to={"/contact"}
+          style={{
+            fontSize: "20px",
+            textDecoration: "none",
+            color: "white",
+            fontFamily: "Raleway",
+            fontWeight: 100,
+            marginLeft: 15,
+            marginTop: 4,
+            textAlign: "center"
+          }}
+        >
+          Contact&nbsp;Me
+        </Link>
+      </a>
     </div>
     <div id="footer" className="fadeIn">
       <span className="footer">
@@ -123,7 +131,6 @@ export const Navbar = props => (
       </span>
     </div>
   </div>
-
 );
 
 export const Badge = props => (
@@ -157,7 +164,9 @@ export const Footer = props => (
   </div>
 );
 
-
 export const Mountain = props => (
-  <img src={require("./images/mountain.svg")} style={{ width: "20%", position: "fixed", bottom: "33px", right: 0 }} />
-)
+  <img
+    src={require("./images/mountain.svg")}
+    style={{ width: "20%", position: "fixed", bottom: "33px", right: 0 }}
+  />
+);
