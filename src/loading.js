@@ -50,7 +50,6 @@ export const Navbar = props => (
       <span className="logo" style={{ paddingTop: "19px" }}>
         G
       </span>
-      <a href="#">
         <Link
           to={"/"}
           style={{
@@ -66,8 +65,7 @@ export const Navbar = props => (
         >
           About&nbsp;Me
         </Link>
-      </a>
-      <a href="#">
+
         <Link
           to={"/resume"}
           style={{
@@ -83,7 +81,6 @@ export const Navbar = props => (
         >
           Resume
         </Link>
-      </a>
       {/* <Link
       to={"/projects"}
       style={{
@@ -95,7 +92,6 @@ export const Navbar = props => (
     >
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projects
     </Link> */}
-      <a href="#">
         <Link
           to={"/contact"}
           style={{
@@ -111,7 +107,6 @@ export const Navbar = props => (
         >
           Contact&nbsp;Me
         </Link>
-      </a>
     </div>
     <div id="footer" className="fadeIn">
       <span className="footer">

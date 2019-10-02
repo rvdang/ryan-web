@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Projects } from "./project";
 import { LoadingScreen, Navbar, Badge, Footer, Mountain } from "./loading";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AboutMe } from "./AboutMe";
 import { Contact } from "./Contact";
 import { Resume } from "./pages/resume";
@@ -13,14 +13,13 @@ function App() {
     <LoadingScreen>
       <meta name="viewport" content="width=1024" />
       <div className="max fadeIn">
-        <Router basename="/">
+        <Router>
           <Navbar />
           <Switch>
             <Route exact path="/" component={AboutMe} />
-            <Route exact path="/resume" component={Resume} />
+            <Route path="/resume" component={Resume} />
             {/* <Route exact path="/projects" component={Projects} /> */}
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/resume/compact" component={CompactResume} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </Router>
         {/* <Mountain/> */}
