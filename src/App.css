@@ -26,7 +26,6 @@
   animation: fadeIn 1s ease 1;
   animation-fill-mode: forwards;
   animation-delay: 2250ms;
-  pointer-events: none;
 }
 
 .max {
