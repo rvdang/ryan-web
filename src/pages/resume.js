@@ -117,7 +117,7 @@ export const Resume = () => {
             <P>Create unit tests with Jest for continuous delivery testing</P>
           </li>
           <li>
-            <P>Interview potential backend engineers and iterns</P>
+            <P>Interview potential backend engineers and interns</P>
           </li>
           <li>
             <P>Refactored statistics system for tracking student performance</P>
